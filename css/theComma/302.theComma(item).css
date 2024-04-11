@@ -1,0 +1,250 @@
+.container {
+    padding-top: 100px;
+}
+.detail_box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 200px;
+}
+.img_box {
+    width: 50%; 
+    position: relative;
+    overflow: hidden;
+}
+.img_box img {
+    width: 100%;
+}
+
+/* 돋보기 */
+.magnifier {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);
+    transform: scale(1.5);
+    /* transform: translate(-50%, -50%) scale(1.5); */
+    display: none;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+
+
+.info_box {
+    width: 40%;
+    padding: 0 5px;
+    box-sizing: border-box;
+    
+    border-top: 3px solid;
+    /* box-sizing: border-box; */
+}
+
+.item_title {
+    line-height: 40px;
+    font-size: 18px;
+}
+
+.item_info {
+    width: 100%;
+    font-size: 13px;
+    color: #b6b6b6;
+    border-bottom: 1px solid #ddd;
+    padding: 5px 0;
+    margin: 5px ;
+}
+/*  */
+.tb_title {
+    width: 150px;
+    /* line-height: 30px; */
+    padding: 10px 0;
+}
+.tb_order_opt {
+    width: 100%;
+    padding: 5px;
+    border-radius: 0;
+    border-color: #b6b6b6;
+
+    box-sizing: border-box; 
+}
+
+/*  */
+.color_pick {
+    font-size: 13px;
+    color: #b6b6b6;
+
+    display: flex;
+    margin-bottom: 20px;
+}
+.cp_L {
+    width: 100px; 
+    padding: 0 5px;
+}
+.cp_R {
+    width: calc(100% - 100px); 
+}
+.color_box {
+    display: flex;
+    gap: 3px;
+}
+.color_opt {
+    width: 30px;
+    height: 30px;
+    border: 1px solid;
+}
+.color_opt > div {
+    width: 22px;
+    height: 22px;
+    margin: 4px;
+    border: 1px solid #999999;
+    box-sizing: border-box;
+}
+.cb_black { background: black;}
+.cb_white { background: white;}
+.cb_gray { background: gray;}
+
+
+/*  */
+.selected_opt {
+    font-size: 13px;
+    color: #626262;
+}
+.so_desc {
+    border-bottom: 1px solid #b6b6b6;
+    line-height: 40px;
+}
+.selected_item {
+    display: flex;
+    border: 1px solid #b6b6b6;
+    border-top: none;
+    padding: 10px 7px;
+    box-sizing: border-box;
+}
+.si_1 {
+    width: 50%;
+}
+.si_2 {
+    width: 25%; 
+
+    display: flex;
+    align-items: center;
+}
+.si_2 input {
+    width: 30px;
+    height: 25px;
+    box-sizing: border-box;
+
+    border: 1px solid #d6d6d6;
+    background: #fff;
+}
+.si_2 .txt_qty {
+    border-right: none;
+    border-left: none;
+    color: #999999;
+    text-align: right;
+    outline: none;
+}
+.btn_remove_item {
+    width: 13px;
+    height: 13px;
+    line-height: 13px;
+    text-align: center;
+    font-size: 11px;
+    margin-left: 5px;
+    /* padding: 5px; */
+    background: rgb(59, 59, 59);
+    color: #fff;
+}
+
+.si_3 {
+    width: 25%;
+    text-align: right;
+}
+
+
+.total_price_box {
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    text-align: right;
+    font-size: 16px;
+    color: #949494;
+}
+.final_price {
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.btn_item_box {
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.btn_buy {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #222;
+    color: #fff;
+}
+.btn_addcart,
+.btn_wishlist {
+    width: calc((50% - 2.5px));
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #8e8e8e;
+    box-sizing: border-box;
+
+    font-size: 14px;
+    color: #8e8e8e;
+}   
+
+
+/* 공통 */
+.product_detail,
+.shopping_guide,
+.review,
+.qna,
+.with_item {
+    padding-top: 130px;
+    margin-bottom: 100px;
+}
+.btn_tab_box {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    font-size: 13px;
+    color: #cecece;
+    /* height: 80px; */
+    border-top: 1px solid #858585;
+    /* line-height: 50px; */
+    padding: 15px 0 80px;
+}
+.btn_tab_box li {
+
+}
+.btn_tab_box li a {}
+
+.sec_body img {
+    text-align: center;
+    width: 100%;
+}
+.tab_active {
+    color: #858585;
+}
+
+.empty_box {
+    min-height: 300px;
+    line-height: 100px;
+    color: red;
+    text-align: center;
+}

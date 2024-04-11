@@ -1,0 +1,87 @@
+.container {
+    padding-top: 150px;
+}
+/* 본문 공통 */
+.sec {
+    margin-bottom: 180px;
+}
+.sec_title {
+    height: 100px;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.sec_body {}
+
+.item_box {
+    display: flex;
+    gap: 5px;
+    row-gap: 100px;
+    flex-wrap: wrap;
+}
+.item img {
+    width: 100%;
+}
+.item_info {
+    padding: 0 5px;
+    box-sizing: border-box;
+
+    font-size: 13px;
+    font-weight: 300;
+}
+.item_info_title {
+    font-size: 14px;
+    font-weight: 400;
+    color: #555;
+    line-height: 30px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 5px;
+}
+.o_price { text-decoration: line-through;}
+
+/* 스크롤 위치 맞으면 하나씩 나타나면서 올라오게 하기(샤샤샥) */
+/* .pos_init {
+    transform: translateY(80px);
+    opacity: 0;
+}
+.pos_init_active {
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 0.5s;
+} */
+
+ 
+/* best */ 
+#best .item {
+    width: calc((100% - (5px * 3)) / 4);
+}
+#best .item_img {
+    overflow: hidden;
+    font-size: 0;
+}
+#best .item_img img {
+    transition: all 0.5s;
+}
+#best .item_img:hover img {
+    transform: scale(1.2);
+}
+
+
+/* new */ 
+#new .item {
+    width: calc((100% - (5px * 3)) / 4);
+}
+#new .item_img {
+    position: relative;
+}
+#new .covered_img {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    opacity: 0;
+    transition: all 0.3s;
+}
+#new .item_img:hover .covered_img {
+    opacity: 1;
+}
